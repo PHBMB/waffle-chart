@@ -103,4 +103,4 @@ export class AppComponent{
 ```
 
 ## GitHub
-<a href="https://github.com/PHBMB/pb-simple-waffle-chart">GitHub</a>
+<a href="https://github.com/PHBMB/waffle-chart">GitHub</a>
