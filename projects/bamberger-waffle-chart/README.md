@@ -7,7 +7,7 @@ This component can be used to create simple waffle charts. The color or backgrou
 You can get it on npm.
 
 ```
-npm install select --save
+npm i pb-simple-waffle-chart --save
 ```
 
 ## Usage
