@@ -7,7 +7,7 @@ This component can be used to create simple waffle charts. The color or backgrou
 You can get it on npm.
 
 ```
-npm install select --save
+npm i pb-simple-waffle-chart --save
 ```
 
 ## Usage
@@ -40,6 +40,7 @@ fillMode: string // mandatory - waffle fill mode - possible values: vertical-lr 
 ### Example Usage
 
 #### Result
+![](https://github.com/PHBMB/waffle-chart/blob/master/projects/bamberger-waffle-chart/src/WaffleChartResult.png)
 
 
 #### Script
