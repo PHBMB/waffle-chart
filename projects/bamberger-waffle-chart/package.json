@@ -1,0 +1,22 @@
+{
+  "name": "pb-simple-waffle-chart",
+  "version": "0.0.4",
+  "peerDependencies": {
+    "@angular/common": "^11.2.5",
+    "@angular/core": "^11.2.5"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "description": "This component can be used to create simple waffle charts. The color or background image of a category can be customized. The area of the entire waffle chart and one waffle must be defined. The real numbers of every category are the inputs. No need for a pre-processing. The component calculates the ratio for every category and displays the results optimally. It must be ensured that the defined size of a waffle fits into the defined size of the entire waffle chart.",
+  "author": {
+    "name" : "Phillip Bamberger",
+    "url": "https://www.linkedin.com/in/phillip-bamberger-41827172/"
+  },
+  "keywords": ["waffle", "waffle chart", "waffle-chart", "chart waffle", "bamberger"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PHBMB/pb-simple-waffle-chart"
+  },
+  "license": "MIT License"
+}

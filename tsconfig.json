@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "bamberger-waffle-chart": [
+        "dist/bamberger-waffle-chart/bamberger-waffle-chart",
+        "dist/bamberger-waffle-chart"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

@@ -1,7 +1,51 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "6d550acf-5ea6-4a4d-984f-c230d8d9a152"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "bamberger-waffle-chart": {
+      "projectType": "library",
+      "root": "projects/bamberger-waffle-chart",
+      "sourceRoot": "projects/bamberger-waffle-chart/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/bamberger-waffle-chart/tsconfig.lib.json",
+            "project": "projects/bamberger-waffle-chart/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/bamberger-waffle-chart/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/bamberger-waffle-chart/src/test.ts",
+            "tsConfig": "projects/bamberger-waffle-chart/tsconfig.spec.json",
+            "karmaConfig": "projects/bamberger-waffle-chart/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/bamberger-waffle-chart/tsconfig.lib.json",
+              "projects/bamberger-waffle-chart/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "bamberger-waffle-chart"
 }
