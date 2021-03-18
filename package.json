@@ -1,6 +1,6 @@
 {
   "name": "waffle-chart",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PHBMB/pb-simple-waffle-chart"
+    "url": "https://github.com/PHBMB/waffle-chart"
   }
 }

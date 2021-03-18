@@ -1,6 +1,6 @@
 {
   "name": "pb-simple-waffle-chart",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "peerDependencies": {
     "@angular/common": "^11.2.5",
     "@angular/core": "^11.2.5"
@@ -16,7 +16,7 @@
   "keywords": ["waffle", "waffle chart", "waffle-chart", "chart waffle", "bamberger"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/PHBMB/pb-simple-waffle-chart"
+    "url": "https://github.com/PHBMB/waffle-chart"
   },
   "license": "MIT License"
 }
