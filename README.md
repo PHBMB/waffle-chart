@@ -1,27 +1,105 @@
-# WaffleChart
+# pb-simple-waffle-chart
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+This component can be used to create simple waffle charts. The color or background image of a category can be customized. The area of the entire waffle chart and of the single waffle must be defined. The real numbers of every category are the inputs. No need for a pre-processing. The component calculates the ratio for every category and displays the results optimally. It must be ensured that the defined size of a waffle fits into the defined size of the entire waffle chart.
 
-## Development server
+## Install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You can get it on npm.
 
-## Code scaffolding
+```
+npm install select --save
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+### Import the module
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+import { PbSimpleWaffleChartModule } from "pb-simple-waffle-chart";
 
-## Running unit tests
+NgModule({
+  imports: [
+    PbSimpleWaffleChartModule
+  ]
+})
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Parameters
+```
+sizeOfWaffleSquare: number // mandatory - size of one waffle square in px
+marginOfWaffleSquare: number // mandatory - margin of one waffle square in px
+waffleCategories: Array<{"val": number, "bgColor": string, "bgImage": string}> // all mandatory - objects that are represented  
+borderRadiusPercentage: number // mandatory - border radius in %
+divID: string // mandatory - id of entire DOM element
+waffleChartWidth: number // mandatory - width of entire waffle chart in px
+waffleChartHeight: number // mandatory - height of entire waffle chart in px
+fillMode: string // mandatory - waffle fill mode - possible values: vertical-lr | horizontal-tb | tb
 
-## Running end-to-end tests
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Example Usage
 
-## Further help
+#### Result
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+#### Script
+```
+import {Component} from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `<pb-simple-waffle-chart
+                [sizeOfWaffleSquare] = sizeOfWaffleSquare
+                [marginOfWaffleSquare] = marginOfWaffleSquare
+                [waffleCategories] = waffleCategories
+                [borderRadiusPercentage] = borderRadiusPercentage
+                [divID] = divID
+                [waffleChartWidth] = waffleChartWidth
+                [waffleChartHeight] = waffleChartHeight
+                [fillMode] = fillMode>
+              </pb-simple-waffle-chart>`,
+  styles: ['']
+})
+
+export class AppComponent{
+
+  public sizeOfWaffleSquare!: number;
+  public marginOfWaffleSquare!: number;
+  public waffleCategories!: Array<{}>;
+  public borderRadiusPercentage!: number;
+  public divID!: string;
+  public waffleChartWidth!: number;
+  public waffleChartHeight!: number;
+  public fillMode!: string;
+
+  constructor() {
+    this.sizeOfWaffleSquare = 10;
+    this.marginOfWaffleSquare = 2;
+    this.waffleCategories= [
+      {
+        "val" : 100,
+        "bgColor" : "",
+        "bgImage" : "https://upload.wikimedia.org/wikipedia/commons/4/46/Question_mark_%28black%29.svg"
+      },
+      {
+        "val" : 200,
+        "bgColor" : "#0000ff",
+        "bgImage" : ""
+      },
+      {
+        "val" : 300,
+        "bgColor" : "#ff0000",
+        "bgImage" : ""
+      },
+    ]
+    this.borderRadiusPercentage = 100;
+    this.divID = "anID";
+    this.waffleChartWidth = 182;
+    this.waffleChartHeight = 100;
+    this.fillMode = "horizontal-tb" //"vertical-lr | horizontal-tb | tb"
+  }
+}
+```
+
+## GitHub
+<a href="https://github.com/PHBMB/pb-simple-waffle-chart">GitHub</a>
