@@ -42,6 +42,8 @@ fillMode: string // mandatory - waffle fill mode - possible values: vertical-lr 
 #### Result
 ![](https://github.com/PHBMB/waffle-chart/blob/master/projects/bamberger-waffle-chart/src/WaffleChartResult.png)
 
+### Example App
+https://play.google.com/store/apps/details?id=com.bamberger.stopsmoking&gl=DE
 
 #### Script
 ```
