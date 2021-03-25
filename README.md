@@ -42,9 +42,6 @@ fillMode: string // mandatory - waffle fill mode - possible values: vertical-lr 
 #### Result
 ![](https://github.com/PHBMB/waffle-chart/blob/master/projects/bamberger-waffle-chart/src/WaffleChartResult.png)
 
-### Example App
-https://play.google.com/store/apps/details?id=com.bamberger.stopsmoking&gl=DE
-
 #### Script
 ```
 import {Component} from '@angular/core';
@@ -104,5 +101,8 @@ export class AppComponent{
 }
 ```
 
-## GitHub
-<a href="https://github.com/PHBMB/waffle-chart">GitHub</a>
+### Example App (which uses the component)
+https://play.google.com/store/apps/details?id=com.bamberger.stopsmoking&gl=DE
+
+## npm
+<a href="https://www.npmjs.com/package/pb-simple-waffle-chart">npm</a>
